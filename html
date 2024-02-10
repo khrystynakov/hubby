@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,intal-scale=1.0" />
+    <title>Hubby</title>
+    <link rel="icon" href="images/icon2.jpg" type="image.jpg" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="imageContainer">
+      <div class="head">
+        <h3 id="caption">Will you go out with me?</h3>
+      </div>
+      <div class="image">
+        <img id="dynamicImage" src="images/main_bunny.gif" alt="main_bunny" />
+      </div>
+    </div>
+    <div class="button" id="buttonContainer">
+      <input
+        type="button"
+        id="no"
+        value="NO"
+        onmouseover="changeImage(true)"
+        onmouseout="changeImage(false)"
+        onmouseover="moveButton()"
+        onmouseover="incrementHoverCount()"
+      />
+      <input type="button" id="yes" value="YES" />
+    </div>
+  </body>
+</html>
