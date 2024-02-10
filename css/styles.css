@@ -1,0 +1,75 @@
+head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.915);
+}
+h3{
+    font-size: 40px;
+    text-shadow: 1px 2px 2px rgb(222, 140, 158);
+}
+.head{
+    text-align: center;
+    color: rgb(99, 49, 52);
+    margin-top: 130px;
+    margin-bottom: -20px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    margin-top: 30px;
+}
+input {
+    background-color: rgb(222, 140, 158);
+    color: rgb(99, 49, 52);
+    width: 50px;
+    height: 30px;
+    margin: 0 15px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+input:hover{
+    text-shadow: 1px 2px 2px rgb(214, 182, 189);
+    background-color: rgb(227, 156, 172);
+    font-size: larger;
+    cursor: pointer;
+}
+.button{
+    position: relative;
+}
+#no{
+    transition: transform 0.3s ease;
+}
+#no:hover{
+    transform: fleeButton 1s ease infinite;
+}
+@keyframes fleeButton{
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(10px, -10px);
+    }
+    50%{
+        transform: translate(20px, -20px);
+    }
+    75%{
+        transform: translate(30px, -30px);
+    }
+    100%{
+        transform: translate(40px, -40px);
+    }
+}
