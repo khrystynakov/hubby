@@ -47,29 +47,3 @@ input:hover{
     font-size: larger;
     cursor: pointer;
 }
-.button{
-    position: relative;
-}
-#no{
-    transition: transform 0.3s ease;
-}
-#no:hover{
-    transform: fleeButton 1s ease infinite;
-}
-@keyframes fleeButton{
-    0%{
-        transform: translate(0, 0);
-    }
-    25%{
-        transform: translate(10px, -10px);
-    }
-    50%{
-        transform: translate(20px, -20px);
-    }
-    75%{
-        transform: translate(30px, -30px);
-    }
-    100%{
-        transform: translate(40px, -40px);
-    }
-}
