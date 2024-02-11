@@ -34,10 +34,10 @@ img{
 input {
     background-color: rgb(222, 140, 158);
     color: rgb(99, 49, 52);
-    width: 50px;
+    width: 70px;
     height: 30px;
     margin: 0 15px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     border-radius: 15px;
 }

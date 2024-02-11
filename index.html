@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,intal-scale=1.0" />
     <title>Hubby</title>
-    <link rel="icon" href="images/icon2.jpg" type="image.jpg" />
+    <link rel="icon" href="images/icon2.jpg" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/script.js" defer></script>
   </head>
@@ -20,10 +20,10 @@
     <div class="button" id="buttonContainer">
       <input
         type="button"
-        id="no"
+        id="noButton"
         value="NO"
-        onmouseover="changeImage(true)"
-        onmouseout="changeImage(false)"
+        onmouseover="handleHover(true)"
+        onmouseout="handleHover(false)"
       />
       <input type="button" id="yes" value="YES" />
     </div>
