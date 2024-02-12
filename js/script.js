@@ -1,6 +1,10 @@
 document.getElementById("yes").addEventListener("click", function () {
     document.getElementById("dynamicImage").src = "images/sad_bunny.gif";
     document.getElementById("caption").innerHTML = "Hasta la vista Baby!!!!!";
+    var noButton = document.getElementById("noButton");
+    var yesButton = document.getElementById("yes");
+    noButton.style.display = "none";
+    yesButton.style.display = "none";
 });
 let previousImageScr = "images/main_bunny.gif";
 function changeImage(isMouseOver) {
@@ -8,11 +12,11 @@ function changeImage(isMouseOver) {
     if (isMouseOver) {
         previousImageScr = dynamicImage.src;
         dynamicImage.src = "images/happy_bunny.gif";
-        timeoutId = setTimeout(() => 5000);
-    } else {
+    } /*else {
         dynamicImage.src = previousImageScr;
-    }
+    }*/
 };
+
 var noButton = document.getElementById("noButton");
 function moveButtonOnHover(isHovered) {
     if (isHovered) {
