@@ -16,16 +16,15 @@ function changeImage(isMouseOver) {
         dynamicImage.src = previousImageScr;
     }*/
 };
-
 var noButton = document.getElementById("noButton");
 function moveButtonOnHover(isHovered) {
     if (isHovered) {
-        var randomLeft= Math.floor(Math.random() * 500);
-        var randomTop= Math.floor(Math.random() * 100);
+        var randomLeft = Math.floor(Math.random() * 500);
+        var randomTop = Math.floor(Math.random() * 100);
         noButton.style.transform = `translate(${randomLeft}px, ${randomTop}px)`;
-    } 
+    }
 }
 function handleHover(isHovered) {
     changeImage(isHovered);
     moveButtonOnHover(isHovered);
-  }
+}
